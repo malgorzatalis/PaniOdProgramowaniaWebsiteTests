@@ -20,7 +20,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-engine'
 
     // WebDriverManager to manage ChromeDriver version
-    implementation 'io.github.bonigarcia:webdrivermanager:5.2.1'
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.8.0'
+
 }
 
 test {

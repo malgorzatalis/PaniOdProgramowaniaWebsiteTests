@@ -1,5 +1,6 @@
 package pl.paniodprogramowania.tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,7 +15,7 @@ public class BaseTest {
 
     @BeforeAll
     public static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Google\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
 
