@@ -48,10 +48,4 @@ public class HeaderPageTest extends BaseTest {
         Assert.assertTrue(items.stream().anyMatch(s -> s.toLowerCase().contains("moje wystąpienia")), "Missing: Moje wystąpienia");
         Assert.assertTrue(items.stream().anyMatch(s -> s.equalsIgnoreCase("Sklep")), "Missing: Sklep");
     }
-
-    @Test
-    public void shouldFailAndAttachScreenshot() {
-        Assert.assertTrue(false, "Intentional failure to verify Allure report");
-    }
-
 }
